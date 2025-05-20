@@ -1,0 +1,12 @@
+
+.icon,
+.socialIcon,
+.actionIcon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.actionIcon {
+  cursor: pointer;
+}

@@ -49,6 +49,14 @@ function Header () {
                             <a href="">Pages</a>
                         </nav>
 
+                        <div className="mobile-icons">
+                            <img src="/icons/b-search.svg" alt="" />
+                            <img src="/icons/b-cart.svg" alt="" />
+                            <button className="hamburger">
+                                <img src="/icons/menu.svg" alt="" />
+                            </button>
+                        </div>
+
                         <div className="user-actions">
                             <div className="login">
                                 <img src="/icons/user.svg" alt="" className={styles.actionIcon}/>
@@ -58,6 +66,13 @@ function Header () {
                             <img src="/icons/cart.svg" alt="" className={styles.actionIcon} />
                             <img src="/icons/heart.svg" alt="" />
                         </div>
+                    </div>
+
+                    <div className="mobile-menu">
+                        <a href="#">Home</a>
+                        <a href="#">Product</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Contact</a>
                     </div>
                 </div>
             </header>

@@ -7,7 +7,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -79,3 +78,71 @@
   color: #23A6F0;
   font-weight: 700;
 }
+
+/* Add to your existing CSS */
+
+/* Mobile Icons */
+.mobile-icons {
+  display: none;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu a {
+  padding: 12px 0;
+  color: #252B42;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Responsive Breakpoint */
+@media (max-width: 768px) {
+  /* Hide desktop elements */
+  .top-bar,
+  .nav,
+  .user-actions {
+    display: none;
+  }
+
+  /* Show mobile elements */
+  .mobile-icons {
+    background: none;
+    display: flex;
+    order: 5;
+  }
+
+  .logo {
+    order: 1;
+    margin-right: auto;
+  }
+
+  .main-header .container {
+    padding: 15px 20px;
+  }
+
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .mobile-menu a {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0.2px;
+    color: #737373;
+
+  }
+
+}
+
+

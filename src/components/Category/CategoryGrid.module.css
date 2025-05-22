@@ -1,0 +1,151 @@
+.CategoryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 14rem);
+  gap: 1.5rem;
+  padding: 0 2rem;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.categoryCard {
+  position: relative;
+  overflow: hidden;
+}
+
+.categoryCard:nth-child(1) {
+  grid-row: span 2;
+  grid-column: 1 / 2;
+}
+
+.categoryCard:nth-child(2) {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+}
+
+.categoryCard:nth-child(3) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.categoryCard:nth-child(4) {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.categoryImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.textOverlay {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: #0f172a;
+  font-family: sans-serif;
+}
+
+.itemCount {
+  font-size: 0.875rem;
+  color: #10b981;
+  margin-bottom: 4px;
+}
+
+.categoryName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.readMoreLink {
+  font-size: 0.875rem;
+  color: inherit;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Tablet view */
+@media (max-width: 64rem) {
+  .CategoryGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 13rem);
+  }
+
+  .categoryCard:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: span 2;
+  }
+
+  .categoryCard:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .categoryCard:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .categoryCard:nth-child(4) {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+}
+
+
+
+@media (max-width: 48rem) {
+  .CategoryGrid {
+    grid-template-columns: 1fr;
+    padding: 0 1.5rem;
+    gap: 10rem;
+    justify-items: center;
+    padding-left: 5rem;
+  }
+
+  .categoryCard {
+    grid-column: auto !important;
+    grid-row: auto !important;
+    width: 100%;
+    margin: 10px;
+    
+    height: 30rem; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+  }
+
+  .imageContainer {
+    width: 90%;
+    height: 70%; 
+    position: relative;
+  }
+
+  .categoryImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .textOverlay {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .categoryName {
+    font-size: 1.25rem;
+  }
+
+  .itemCount,
+  .readMoreLink {
+    font-size: 0.75rem;
+  }
+}

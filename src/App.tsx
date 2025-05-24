@@ -6,6 +6,7 @@ import FeaturedPostsSection from './components/Featured Post/FeaturedPostsSectio
 import Footer from './components/Footer/Footer'
 import CTASection from './components/CTA Section/CTASection'
 import Testimonial from './components/Testimonial/Testimonial'
+import BestServices from './components/Best Service/BestServices'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
     <div>
       <Header/>
       <CategoryGrid/>
+      <BestServices/>
       <FeaturedPostsSection/>
       <Testimonial/>
       <CTASection/>

@@ -1,0 +1,92 @@
+.footer {
+  background-color: #f9f9f9;
+  padding: 40px 80px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #252B42;
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.brand {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.socials img {
+  width: 20px;
+  height: 20px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 30px 0;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.column {
+  min-width: 160px;
+}
+
+.column h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.column p {
+  font-size: 14px;
+  color: #737373;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.inputGroup {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.inputGroup input {
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  flex: 1;
+  font-size: 14px;
+}
+
+.inputGroup button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #23A6F0;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.smallText {
+  font-size: 12px;
+  color: #737373;
+}
+
+.bottomText {
+  text-align: center;
+  font-size: 14px;
+  color: #737373;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}

@@ -1,0 +1,113 @@
+.card {
+  background: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  max-width: 348px;
+  height: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.imageContainer {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.newBadge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #E74040;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.cardContent {
+  padding: 24px;
+  text-align: left; /* Left-align all text */
+}
+
+.categoryContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.category {
+  color: #8EC2F2;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.title {
+  color: #252B42;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.description {
+  color: #737373;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.dateSection,
+.commentSection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #737373;
+  font-size: 12px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.learnMore {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #23A6F0;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.learnMore:hover {
+  text-decoration: underline;
+}
+
+.learnMore img {
+  width: 12px;
+  height: 12px;
+}

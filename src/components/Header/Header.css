@@ -98,6 +98,11 @@
   font-weight: 600;
 }
 
+.hamburger{
+    background: none;
+    border: none;
+}
+
 
 @media (max-width: 768px) {
   .top-bar,

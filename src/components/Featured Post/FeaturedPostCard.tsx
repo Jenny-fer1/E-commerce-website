@@ -33,11 +33,11 @@ function FeaturedPostCard(props: FeaturedPostCardProps) {
                 
                 <div className={styles.footer}>
                     <div className={styles.dateSection}>
-                        <img src="/public/icons/date.svg" alt="Date" className={styles.icon} />
+                        <img src="/icons/date.svg" alt="Date" className={styles.icon} />
                         <span>{props.date}</span>
                     </div>
                     <div className={styles.commentSection}>
-                        <img src="/public/icons/comment.svg" alt="Comments" className={styles.icon} />
+                        <img src="/icons/comment.svg" alt="Comments" className={styles.icon} />
                         <span>{props.commentCount} comments</span>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ function FeaturedPostCard(props: FeaturedPostCardProps) {
                 <a href="#" className={styles.learnMore}>
                     Learn More
                     <span>
-                        <img src="/public/icons/next.svg" alt="" />
+                        <img src="/icons/next.svg" alt="" />
                     </span>
                 </a>
             </div>

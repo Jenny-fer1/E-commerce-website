@@ -1,0 +1,166 @@
+/* ProductGrid.module.css */
+
+.section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subheading {
+  color: #737373;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #252B42;
+  margin-bottom: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.description {
+  color: #737373;
+  font-size: 0.875rem;
+  margin-bottom: 3rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  /* Desktop: 4 columns */
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.card h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #252B42;
+  margin: 1rem 0.5rem 0.5rem;
+  line-height: 1.4;
+}
+
+.category {
+  color: #737373;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0.5rem;
+}
+
+.price {
+  margin: 1rem 0.5rem 1.5rem;
+  font-weight: 700;
+}
+
+.old {
+  color: #BDBDBD;
+  text-decoration: line-through;
+  margin-right: 0.5rem;
+}
+
+.new {
+  color: #23856D;
+}
+
+.loadBtn {
+  background: transparent;
+  border: 2px solid #23A6F0;
+  color: #23A6F0;
+  padding: 1rem 2.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.loadBtn:hover {
+  background: #23A6F0;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(35, 166, 240, 0.3);
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .section {
+    padding: 3rem 1.5rem;
+  }
+  
+  .heading {
+    font-size: 2rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .grid {
+    /* Mobile: 1 column (stack vertically) */
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 300px;
+    margin: 0 auto 3rem;
+  }
+  
+  .section {
+    padding: 2rem 1rem;
+  }
+  
+  .heading {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .description {
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    max-width: 100%;
+  }
+  
+  .image {
+    height: 250px;
+  }
+  
+  .loadBtn {
+    padding: 0.875rem 2rem;
+    font-size: 0.8125rem;
+  }
+}

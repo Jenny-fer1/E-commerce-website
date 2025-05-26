@@ -14,7 +14,7 @@ function BestServices() {
   
         <div className={styles.serviceCard}>
           <img 
-            src="/public/icons/easy-wins.svg" 
+            src="/icons/easy-wins.svg" 
             alt="Easy Wins icon" 
             className={styles.serviceIcon}
           />
@@ -25,7 +25,7 @@ function BestServices() {
      
         <div className={styles.serviceCard}>
           <img 
-            src="/public/icons/concrete.svg" 
+            src="/icons/concrete.svg" 
             alt="Concrete icon" 
             className={styles.serviceIcon}
           />
@@ -36,7 +36,7 @@ function BestServices() {
       
         <div className={styles.serviceCard}>
           <img 
-            src="/public/icons/hack-growth.svg" 
+            src="/icons/hack-growth.svg" 
             alt="Hurdle icon" 
             className={styles.serviceIcon}
           />

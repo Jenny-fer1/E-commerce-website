@@ -1,6 +1,6 @@
 .bestServices {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 50px 0;
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -13,21 +13,30 @@
   font-size: 1rem;
   color: #737373;
   margin-bottom: 0.5rem;
-  font-weight: 700;
+
+  font-family: 'Montserrat';
+font-weight: 700;
+font-size: 20px;
+
 }
 
 .title {
-  font-size: 2rem;
-  color: #252B42;
-  margin-bottom: 1rem;
-  font-weight: 700;
+    font-size: 2rem;
+    color: #252B42;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 2rem;
 }
 
 .description {
   font-size: 1rem;
   color: #737373;
-  max-width: 600px;
   margin: 0 auto;
+font-family: 'Montserrat';
+font-weight: 500;
+  
 }
 
 .servicesGrid {
@@ -38,10 +47,8 @@
 }
 
 .serviceCard {
-  background: #FFFFFF;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -58,17 +65,20 @@
 }
 
 .serviceTitle {
-  font-size: 1.5rem;
-  color: #252B42;
-  margin-bottom: 1rem;
-  font-weight: 700;
+    color: #252B42;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
 }
 
 .serviceDescription {
-  font-size: 1rem;
+  font-size: 14px;
   color: #737373;
   margin-bottom: 1.5rem;
   min-height: 60px;
+  font-family: 'Montserrat';
+  font-weight: 400;
 }
 
 .serviceButton {

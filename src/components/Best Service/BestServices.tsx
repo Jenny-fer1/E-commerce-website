@@ -19,7 +19,7 @@ function BestServices() {
             className={styles.serviceIcon}
           />
           <h3 className={styles.serviceTitle}>Easy Wins</h3>
-          <p className={styles.serviceDescription}>Get your best looking smile</p>
+          <p className={styles.serviceDescription}>Get your best looking smile now!</p>
         </div>
 
      
@@ -30,7 +30,7 @@ function BestServices() {
             className={styles.serviceIcon}
           />
           <h3 className={styles.serviceTitle}>Concrete</h3>
-          <p className={styles.serviceDescription}>Defalcate is most focused in</p>
+          <p className={styles.serviceDescription}>Defalcate is most focused in helping you discover your most beautiful smile</p>
         </div>
 
       
@@ -40,8 +40,8 @@ function BestServices() {
             alt="Hurdle icon" 
             className={styles.serviceIcon}
           />
-          <h3 className={styles.serviceTitle}>Hurdle</h3>
-          <p className={styles.serviceDescription}>Overcome any hurdle or any</p>
+          <h3 className={styles.serviceTitle}>Hack Growth</h3>
+          <p className={styles.serviceDescription}>Overcome any hurdle or any problem</p>
         </div>
       </div>
     </section>

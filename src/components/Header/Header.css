@@ -1,6 +1,7 @@
 
 .header {
   font-family: 'Montserrat', sans-serif;
+  margin-bottom: 30px;
 }
 
 .container {
@@ -79,16 +80,13 @@
   font-weight: 700;
 }
 
-/* Add to your existing CSS */
 
-/* Mobile Icons */
 .mobile-icons {
   display: none;
   gap: 15px;
   align-items: center;
 }
 
-/* Mobile Menu */
 .mobile-menu {
   display: none;
 }
@@ -100,18 +98,15 @@
   font-weight: 600;
 }
 
-/* Responsive Breakpoint */
+
 @media (max-width: 768px) {
-  /* Hide desktop elements */
   .top-bar,
   .nav,
   .user-actions {
     display: none;
   }
 
-  /* Show mobile elements */
   .mobile-icons {
-    background: none;
     display: flex;
     order: 5;
   }

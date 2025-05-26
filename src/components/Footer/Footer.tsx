@@ -16,35 +16,35 @@ function Footer() {
 
       <div className={styles.columns}>
         <div className={styles.column}>
-          <h4>Company Info</h4>
+          <h5>Company Info</h5>
           <p>About Us</p>
           <p>Carrier</p>
           <p>We are hiring</p>
           <p>Blog</p>
         </div>
         <div className={styles.column}>
-          <h4>Legal</h4>
+          <h5>Legal</h5>
           <p>About Us</p>
           <p>Carrier</p>
           <p>We are hiring</p>
           <p>Blog</p>
         </div>
         <div className={styles.column}>
-          <h4>Features</h4>
+          <h5>Features</h5>
           <p>Business Marketing</p>
           <p>User Analytic</p>
           <p>Live Chat</p>
           <p>Unlimited Support</p>
         </div>
         <div className={styles.column}>
-          <h4>Resources</h4>
+          <h5>Resources</h5>
           <p>IOS & Android</p>
           <p>Watch a Demo</p>
           <p>Customers</p>
           <p>API</p>
         </div>
         <div className={styles.column}>
-          <h4>Get In Touch</h4>
+          <h5>Get In Touch</h5>
           <div className={styles.inputGroup}>
             <input type="email" placeholder="Your Email" />
             <button>Subscribe</button>

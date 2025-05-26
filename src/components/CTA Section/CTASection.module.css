@@ -1,8 +1,8 @@
 .section {
   position: relative;
   width: 100%;
-  height: 90vh; /* Full screen height */
-  background-image: url('/public/images/background.svg'); /* Make sure the image path is correct */
+  height: 90vh; 
+  background-image: url('/public/images/background.svg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11,7 +11,7 @@
   align-items: center;
   text-align: center;
   overflow: hidden;
-  padding: 0 16px; /* Add some horizontal padding for smaller screens */
+  padding: 0 16px; 
   box-sizing: border-box;
 }
 
@@ -25,32 +25,56 @@
 }
 
 .subheading {
-  color: #23a6f0;
-  font-weight: 600;
-  font-size: 14px;
-  margin-bottom: 16px;
+    color: #23a6f0;
+    margin-bottom: 16px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 .heading {
   color: #252b42;
-  font-weight: 700;
-  font-size: 40px;
   line-height: 1.3;
   margin: 0 0 16px;
+
+  font-family: 'Montserrat';
+font-weight: 700;
+font-size: 40px;
+line-height: 50px;
+letter-spacing: 0.2px;
+text-align: center;
+
 }
 
 .description {
   color: #737373;
-  font-size: 16px;
-  line-height: 1.6;
   margin-bottom: 24px;
+
+  font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: center;
+
 }
 
 .price {
-  color: #2dc071;
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 32px;
+
+
+  font-family: 'Montserrat';
+  font-weight: 900;
+font-size: 30px;
+line-height: 32px;
+letter-spacing: 0.1px;
+text-align: center;
+color: #23856D;
+
+
 }
 
 .cta {

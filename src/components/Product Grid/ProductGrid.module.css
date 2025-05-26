@@ -1,10 +1,11 @@
-/* ProductGrid.module.css */
+
 
 .section {
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+  margin-top: 100px;
 }
 
 .subheading {
@@ -14,6 +15,7 @@
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  font-family: 'Montserrat';
 }
 
 .heading {
@@ -22,6 +24,7 @@
   color: #252B42;
   margin-bottom: 1rem;
   letter-spacing: 0.02em;
+  font-family: 'Montserrat';
 }
 
 .description {
@@ -31,13 +34,13 @@
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
+  font-family: 'Montserrat';
 }
 
 .grid {
   display: grid;
   gap: 2rem;
   margin-bottom: 3rem;
-  /* Desktop: 4 columns */
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -112,7 +115,7 @@
   box-shadow: 0 4px 12px rgba(35, 166, 240, 0.3);
 }
 
-/* Tablet styles */
+
 @media (max-width: 1024px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
@@ -128,10 +131,9 @@
   }
 }
 
-/* Mobile styles */
+
 @media (max-width: 768px) {
   .grid {
-    /* Mobile: 1 column (stack vertically) */
     grid-template-columns: 1fr;
     gap: 1.5rem;
     max-width: 300px;

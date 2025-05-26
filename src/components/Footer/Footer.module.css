@@ -1,6 +1,6 @@
 .footer {
-  background-color: #f9f9f9;
-  padding: 40px 80px;
+  background-color: #FAFAFA;
+  padding: 0;
   font-family: 'Segoe UI', sans-serif;
   color: #252B42;
 }
@@ -9,7 +9,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  padding: 40px 80px;
+  background: #FAFAFA;
 }
 
 .brand {
@@ -26,8 +27,8 @@
 
 .divider {
   border: none;
-  border-top: 1px solid #eee;
-  margin: 30px 0;
+  border-top: 1px solid #E6E6E6;
+  margin: 0;
 }
 
 .columns {
@@ -35,24 +36,27 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 40px;
-  margin-bottom: 40px;
+  padding: 40px 80px;
+  background-color: #FFFFFF;
 }
 
 .column {
   min-width: 160px;
 }
 
-.column h4 {
+.column h5 {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 16px;
 }
 
 .column p {
-  font-size: 14px;
-  color: #737373;
-  margin-bottom: 12px;
-  cursor: pointer;
+    color: #737373;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 1rem;
 }
 
 .inputGroup {
@@ -61,11 +65,12 @@
 }
 
 .inputGroup input {
-  padding: 10px 16px;
-  border: 1px solid #ccc;
+  padding: 1rem 2rem;
+  border: 1px solid #E6E6E6;
   border-radius: 5px 0 0 5px;
   flex: 1;
   font-size: 14px;
+  background: #F9F9F9;
 }
 
 .inputGroup button {
@@ -84,9 +89,38 @@
 }
 
 .bottomText {
-  text-align: center;
-  font-size: 14px;
-  color: #737373;
-  padding-top: 20px;
-  border-top: 1px solid #eee;
+    padding: 20px 80px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #FAFAFA;
+    color: #737373;
+}
+
+.bottomText p {
+    margin: 0;
+}
+
+@media(max-width:48rem) {
+    .topSection{
+        display: flex;
+        flex-direction: column;       
+        justify-content: flex-start;  
+        align-items: flex-start;      
+        gap: 1rem;
+        padding: 20px;
+    }
+
+    .columns {
+        padding: 20px;
+    }
+
+    .bottomText {
+        padding: 20px;
+    }
+
+    .socials img {
+        margin-right: 1rem;
+        margin-left: 0;
+    }
 }

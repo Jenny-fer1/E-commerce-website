@@ -1,4 +1,4 @@
-// ProductGrid.tsx - Mobile-aware version
+
 import { useState, useEffect } from 'react';
 import styles from './ProductGrid.module.css';
 import { useGetProductsQuery } from '../../Features/productApi';
@@ -9,7 +9,7 @@ function ProductGrid() {
   const [isMobile, setIsMobile] = useState(false);
   const { data, error, isLoading } = useGetProductsQuery();
 
-  // Check if we're on mobile
+  
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -21,7 +21,7 @@ function ProductGrid() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  // Set initial display count based on screen size
+  
   useEffect(() => {
     setDisplayCount(isMobile ? 5 : 8);
   }, [isMobile]);
@@ -40,7 +40,7 @@ function ProductGrid() {
   const hasMoreProducts = displayCount < data.products.length;
 
   const handleLoadMore = () => {
-    // Load more products based on screen size
+  
     const loadMoreCount = isMobile ? 5 : 8;
     setDisplayCount(prev => prev + loadMoreCount);
   };

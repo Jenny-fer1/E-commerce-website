@@ -14,7 +14,7 @@ function CTASection() {
         <p className={styles.price}>$16.48</p>
         <button className={styles.cta}>ADD YOUR CALL TO ACTION</button>
       </div>
-      <img className={styles.image} src="/public/images/background.svg" alt="Utensils" />
+      <img className={styles.image} src="/images/background.svg" alt="Utensils" />
     </section>
   );
 }

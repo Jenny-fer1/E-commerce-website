@@ -7,25 +7,30 @@ type FeaturedPostCardProps = {
     description: string;
     date: string;
     commentCount: number;
-    image:string;
+    image: string;
 };
-function FeaturedPostCard (props: FeaturedPostCardProps) {
+
+function FeaturedPostCard(props: FeaturedPostCardProps) {
     return (
         <div className={styles.card}>
             <div className={styles.imageContainer}>
                 <img 
-                src={props.image} 
-                alt={props.title} 
-                className={styles.image}
+                    src={props.image} 
+                    alt={props.title} 
+                    className={styles.image}
                 />
-            {props.isNew && <span className={styles.newBadge}>NEW</span>}
+                {props.isNew && <span className={styles.newBadge}>NEW</span>}
             </div>
             <div className={styles.cardContent}>
-                <span>{props.category}</span>
-
+                <div className={styles.categoryContainer}>
+                    {props.category.map((cat, index) => (
+                        <span key={index} className={styles.category}>{cat}</span>
+                    ))}
+                </div>
                 
-                <p>{props.title}</p>
-                <p>{props.description}</p>
+                <h3 className={styles.title}>{props.title}</h3>
+                <p className={styles.description}>{props.description}</p>
+                
                 <div className={styles.footer}>
                     <div className={styles.dateSection}>
                         <img src="/public/icons/date.svg" alt="Date" className={styles.icon} />
@@ -36,15 +41,16 @@ function FeaturedPostCard (props: FeaturedPostCardProps) {
                         <span>{props.commentCount} comments</span>
                     </div>
                 </div>
+                
                 <a href="#" className={styles.learnMore}>
                     Learn More
                     <span>
                         <img src="/public/icons/next.svg" alt="" />
                     </span>
-                    </a>
+                </a>
             </div>
         </div>
     )
-};
+}
 
 export default FeaturedPostCard;

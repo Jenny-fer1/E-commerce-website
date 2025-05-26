@@ -19,7 +19,7 @@ function FeaturedPostCardSection() {
           description="We focus on ergonomics and meeting you where you work. It's only a keystroke away."
           date="22 April 2021"
           commentCount={10}
-          image="/public/images/post-1.svg"
+          image="/images/post-1.svg"
         />
 
         <FeaturedPostCard
@@ -28,8 +28,8 @@ function FeaturedPostCardSection() {
           title="Best practices for minimalist design"
           description="Tips and tricks for clean UI and better user experience in modern web applications."
           date="10 May 2021"
-          commentCount={7}
-          image="/public/images/post-2.svg"
+          commentCount={10}
+          image="/images/post-2.svg"
         />
 
         <FeaturedPostCard
@@ -38,8 +38,8 @@ function FeaturedPostCardSection() {
           title="The future of AI in healthcare"
           description="Exploring how artificial intelligence is transforming patient care and diagnosis."
           date="5 March 2021"
-          commentCount={7676878}
-          image="/public/images/post-3.svg"
+          commentCount={10}
+          image="/images/post-3.svg"
         />
       </div>
     </section>
